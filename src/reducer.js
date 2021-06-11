@@ -35,6 +35,12 @@ const reducer = (state, dispatch) => {
         basket: newBasket,
       };
 
+    case 'SET_USER':
+      return {
+        ...state,
+        user: dispatch.user,
+      };
+
     default:
       return state;
   }
